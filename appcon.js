@@ -10,3 +10,19 @@ const text = [
     `Although sponge cake is usually made without butter, its flavor is often enhanced with buttercream, pastry cream or other types of fillings and frostings. Sponge soaks up flavors from fresh fruits, fillings and custard sauces.Sponge cake covered in boiled icing was very popular in American cuisine during the 1920s and 1930s. The delicate texture of sponge and angel food cakes, and the difficulty of their preparation, meant these cakes were more expensive than daily staple pies. The historic Frances Virginia Tea Room in Atlanta served sponge cake with lemon filling and boiled icing. New York City's Crumperie served not only crumpets but toasted sponge cake as well.[10][7]`
 ];
 
+
+const form = document.querySelector('.lorem');
+const amount = document.getElementById('amount');
+const result = document.querySelector('.lorem-text');
+
+form.addEventListener('submit', function (e){
+    e.preventDefault();
+    const value = parseInt(amount.value);
+
+    // empty
+    // -1
+    //  > 9
+    if(isNaN(value) || value < 0 || value > 9){
+        result.innerHTML = `<p class="result">${text[0]}</P>`
+    }
+});

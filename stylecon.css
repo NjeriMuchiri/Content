@@ -20,6 +20,11 @@
     line-height:1.5;
     letter-spacing:0.1em;
 }
+.lorem{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .lorem label{
     color:#f94d00;
     font-weight:900;
@@ -53,4 +58,12 @@ input::placeholder{
 .btn:hover{
    color:#f94d00;
    font-weight: bolder;
+}
+ .lorem-text{
+    max-width:25rem;
+    margin-top:30px;
+    font-size:18px;
+    letter-spacing: 0.1em;
+    font-family: 'Satisfy',cursive;
+    word-spacing: 0.1em;
 }
